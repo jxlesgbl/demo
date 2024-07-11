@@ -28,7 +28,7 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
-    @PostMapping
+    @PostMapping("/new")
     public User createUser(@RequestBody User user) {
         return userService.createUser(user);
     }
